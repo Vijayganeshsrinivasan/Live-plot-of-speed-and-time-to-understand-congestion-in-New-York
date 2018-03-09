@@ -1,57 +1,76 @@
-# API Project
+# Write a Brief Descriptive Title Here
 
-Our in-class exercises for the "data visualization" module have introduced you to some basic graphing and data importing concepts.  This project is designed to help you enhance your ability to find other sources of interesting data online.
-
----
-- **This is a group assignment.  Your group should have exactly two (2) students.**
-- **If you use an online source or a book, you must cite that source.**  
----
-
-## Assignment Details
-1. Find a data source online.  This could be any type of data that you find interesting/useful.  Examples include weather, traffic, public health, sales records, census data, sports statistics, music or movie databases, etc.. 
-
-	There are a few caveats:
-	
-	a. You cannot use Twitter data (we'll discuss this data later in the semester).
-
-	b. Each group must use a different type of data.  There will be a sign-in sheet on GitHub.  Data types will be reserved on a first-come, first-served basis.  *If you study a data type that has already been reserved you will receive a zero (0) on this assignment.* 
-
-	c. The data must be accessed directly from the data source.  You may not download the data manually and then utilize the data offline.  This means you'll probably want to find a web application that offers an API (application programming interface).
-	
-2. Once you've selected a data source, you must write a python script that will:
-
-	a. Automatically import the data from the online source, and 
-
-	b. Plot/visualize some interesting aspect of this data.
-	
-	You may utilize sample code online...just make sure to cite all of your references.  *If you submit code that is not your own without proper attribution you will receive a zero (0) on this assignment.*
-	
-	You will be required to submit your `.py` script(s).
-	
-3. Additionally, you are required to provide a README summarizing your research.  A template is provided in the `ABC_XYZ_Keyword` directory ([check this out](Student_Code/ABC_XYZ_Keyword)).
-	
-4. Finally, each group will give a five-minute presentation in class so we can all learn from each other.  You should use your README as the visual aide (i.e., do *not* create a separate PowerPoint presentation).  All files will be made available to the class (again, to increase shared learning).
+Authors:  **Name 1** and **Name 2**
 
 ---
 
-## Submission Requirements
-By the due date (see GitHub for the actual date), your group should submit a pull request for a directory containing the following:
-1. Your Python code, 
-2. A README.md file, and 
-3. An images directory containing images that appear in the README.
-
-Your directory should be named `USERID1_USERID2_Keyword`, where the user IDs should be replaced by the UB user names of the two group members in ALL CAPS and `Keyword` should be replaced by a single word that describes your data source.
-	
-NOTE:  Do not email your code.  Submit a pull request.
-
-All groups will be required to submit the electronic materials prior to the in-class presentations.
-
-You are given one "free" pull request.  Each additional pull request will cost your team 10 points; make sure you get your code right the first time.
-**There will be no pull requests honored after the due date.**
+**NOTE**:  The *italicized* content below is for your reference only.  Please remove these comments before submitting.
 
 ---
 
-## Presentation Details
-Each group will have five (5) minutes to present the results of their research (via the README file).  Groups will be chosen at random during class.  Both team members are required to attend all presentations to receive credit.
+## Introduction
+*The purpose of this section is to provide some information about the data you're exploring.  For example, you should*
+- *Describe the type of data that you're importing.* 
+- *Describe the source of the data.  Include URLs.*  
+- *Explain how recent is this data?  How often is it updated?*
 
-Five minutes isn't very long; you'll have to use your time wisely.  The purpose of the presentation is to give your classmates a basic understanding of the type of data you've studied, some of the key features of the Python script you've submitted (focusing on something new/unique that we didn't cover in class), and some suggestions for what could be done with this data.  You do not have time to discuss the code line-by-line.  However, you should be prepared to answer specific questions about what a particular line of code actually does.
+---
+
+## Sources
+*In this section, provide links to your references.  For example:*
+- The source code came from [the magic source code farm](http://www.amagicalnonexistentplace.com)
+- The code retrieves data from [the organization for hosting cool data](http://www.anothermagicalnonexistentplace.com)
+
+---
+
+## Explanation of the Code
+*In this section you should provide a more detailed explanation of what, exactly, the above code actually does.  Your classmates should be able to read your explanation and understand what is happening in the code.*
+
+The code, `needs_a_good_name.py`, begins by importing necessary Python packages:
+```
+import matplotlib.pyplot as plt
+```
+
+- *NOTE:  If a package does not come pre-installed with Anaconda, you'll need to provide instructions for installing that package here.*
+
+We then import data from [insert name of data source].  We print the data to allow us to verify what we've imported:
+```
+x = [1, 3, 4, 7]
+y = [2, 5, 1, 6]
+
+for i in range(0,len(x)):
+	print "x[%d] = %f" % (i, x[i])		
+```
+- *NOTE 1:  This sample code doesn't actually import anything.  You'll need your code to grab live data from an online source.*  
+- *NOTE 2:  You will probably also need to clean/filter/re-structure the raw data.  Be sure to include that step.*
+
+Finally, we visualize the data.  We save our plot as a `.png` image:
+```
+plt.plot(x, y)
+plt.savefig('samplefigure.png')	
+plt.show()
+```
+
+The output from this code is shown below:
+
+![Image of Plot](images/samplefigure.png)
+
+---
+
+## How to Run the Code
+*Provide step-by-step instructions for running the code.  For example, I like to run code from the terminal:*
+1. Open a terminal window.
+
+2. Change directories to where `needs_a_good_name.py` is saved.
+
+3. Type the following command:
+	```
+	python needs_a_good_name.py
+	```
+
+- *NOTE: You are welcome to provide instructions using Anaconda or IPython.*
+
+---
+
+## Suggestions
+*Finally, you should suggest any additional features that would be useful/interesting.  For example, what else could you do with these data?  How might you want to modify the plot to be more descriptive?  What summary statistics might you want to calculate with these data?*
