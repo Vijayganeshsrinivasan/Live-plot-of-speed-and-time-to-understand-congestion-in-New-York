@@ -23,8 +23,12 @@ Authors:  **Vijay Ganesh Srinivasan** and **Ramakrishna Polepeddi**
 
 ## Things to do before executing this program or learning this program
 - The code uses the functions and modules of Socrata to perform the operations within the code. To learn about Real Time Traffic Speed Data from Socrata and its functions [click HERE](https://dev.socrata.com/foundry/data.cityofnewyork.us/i4gi-tjb9)
-- For general Socrata and module sodapy information [click HERE](https://dev.socrata.com/consumers/getting-started.html)
-- To know about types of python maps [click HERE](
+- For general information on Socrata and module sodapy that is used in this code [click HERE](https://dev.socrata.com/consumers/getting-started.html)
+- There are many map modules that could be used. Here we have used Folium. To know about Folium documentation [click HERE](https://folium.readthedocs.io/en/latest/#)
+- For Types of maps Folium offers [click HERE](http://folium.readthedocs.io/en/latest/quickstart.html)
+- For Jupyter examples of Folium [click HERE](http://nbviewer.jupyter.org/github/python-visualization/folium/tree/master/examples/)
+- For Github of python visualization using Folium [click HERE](https://github.com/python-visualization/folium)
+- To learn more about the maps using Pandas plotly(not used in this code) watch this [Youtube video tutorial](https://www.youtube.com/watch?v=hA39KSTb3dY)
 
 ---
 
