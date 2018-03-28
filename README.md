@@ -11,7 +11,8 @@ Authors:  **Vijay Ganesh Srinivasan** and **Ramakrishna Polepeddi**
 ## Introduction
 *We are the Grad students from University at Buffalo, State University of New York written a program to capture live data and plot the speed and time to understand the congestion in the New York boroughs*
 - *The source of the data is from https://opendata.cityofnewyork.us/ . The site provides open source data, api and wrappers for the data what we want to analyze.
-- *For this program we have taken the Real-Time Traffic Speed Data from the opendata.cityofnewyork website. The best part about the data is it will be frequently updated on hourly basis. 
+- *For this program we have taken the Real-Time Traffic Speed Data from the opendata.cityofnewyork website. The best part about the data is it will be frequently updated on hourly basis.
+- *The data will be available in .csv, .json and .geojson formats. The reason for using a .json type of data format over .csv is JSON is better at showing hierarchical / relational data, CSV will lose data, The standard CSV reader application is not good as it is compared with json and last but not least, JSON is easier to work with at scale. For more details on why json is better than csv visit - https://blog.datafiniti.co/4-reasons-you-should-use-json-instead-of-csv-2cac362f1943 .For better picture even than the above explanation the data what we captured here, when we downloaded it as .csv, the size of the file was 3.9Gb. 
 - *Describe the type of data that you're importing.* 
 - *Describe the source of the data.  Include URLs.*  
 - *Explain how recent is this data?  How often is it updated?*
