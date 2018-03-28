@@ -29,17 +29,32 @@ Authors:  **Vijay Ganesh Srinivasan** and **Ramakrishna Polepeddi**
 - For Jupyter examples of Folium [click HERE](http://nbviewer.jupyter.org/github/python-visualization/folium/tree/master/examples/)
 - For Github of python visualization using Folium [click HERE](https://github.com/python-visualization/folium)
 - To learn more about the maps using Pandas plotly(not used in this code) watch this [Youtube video tutorial](https://www.youtube.com/watch?v=hA39KSTb3dY)
+- Sodapy is the module used in this code to perform specific functions. Documentation for Sodapy is available [HERE](https://github.com/xmunoz/sodapy)
+
 
 ---
 
 ## Explanation of the Code
-*In this section you should provide a more detailed explanation of what, exactly, the above code actually does.  Your classmates should be able to read your explanation and understand what is happening in the code.*
 
-The code, `needs_a_good_name.py`, begins by importing necessary Python packages:
-```
-import matplotlib.pyplot as plt
-```
+**The uploaded code is executed in the Jupyter environment. If you're trying to execute using Spyder, Windows Powershell or Apple command prompt the method may or may not vary**
 
+The uploaded code, `Live_Traffic_Data.py`, needs the following packages to be present. If not try installing it:
+```
+import pandas as pd
+import folium
+from sodapy import Socrata
+```
+Mostly anyone using Python will have Pandas. The above 2 packages Folium and Sodapy could be installed as follows
+```
+$ pip install folium
+or
+$ conda install folium
+
+```
+Sodapy could be installed as `pip install sodapy`. For more details on Sodapy read the documentation mentioned in **Things to do before executing this program or learning this program**
+
+
+For more 
 - *NOTE:  If a package does not come pre-installed with Anaconda, you'll need to provide instructions for installing that package here.*
 
 We then import data from [insert name of data source].  We print the data to allow us to verify what we've imported:
