@@ -1,6 +1,6 @@
-# Live plot of speed and time to understand congestion in New York Cities 
+# Live plot of speed and time to understand congestion in New York
 
-Authors:  **Name 1** and **Name 2**
+Authors:  **Vijay Ganesh Srinivasan** and **Ramakrishna Polepeddi**
 
 ---
 
@@ -9,7 +9,7 @@ Authors:  **Name 1** and **Name 2**
 ---
 
 ## Introduction
-*The purpose of this section is to provide some information about the data you're exploring.  For example, you should*
+*We are the Grad students from University at Buffalo, State University of New York providing a live plot of speed and time to understand the congestion in the New York*
 - *Describe the type of data that you're importing.* 
 - *Describe the source of the data.  Include URLs.*  
 - *Explain how recent is this data?  How often is it updated?*
