@@ -36,15 +36,18 @@ Authors:  **Vijay Ganesh Srinivasan** and **Ramakrishna Polepeddi**
 
 ## Explanation of the Code
 
+**What happens when the code runs**
+
+
 ![Image of Plot](https://github.com/IE-555/api-vijay-ganesh-srinivasan-ramakrishna-polepeddi/blob/master/images/Capture_2.PNG)
 
 **The uploaded code is executed in the Jupyter environment. If you're trying to execute using Spyder, Windows Powershell or Apple command prompt the method may or may not vary**
 
-The uploaded code, `Live_Traffic_Data.py`, needs the following packages to be present. If not try installing it:
+The uploaded code `Live_Traffic_Data.py` needs the following packages to be present. If not try installing it:
 ```
-import pandas as pd
-import folium
-from sodapy import Socrata
+Pandas
+Folium
+Socrata from Sodapy
 ```
 Mostly anyone using Python will have Pandas. The above 2 packages Folium and Sodapy could be installed as follows
 ```
@@ -55,9 +58,6 @@ $ conda install folium
 ```
 Sodapy could be installed as `pip install sodapy`. For more details on Sodapy read the documentation mentioned in **Things to do before executing this program or learning this program**
 
-
-For more 
-- *NOTE:  If a package does not come pre-installed with Anaconda, you'll need to provide instructions for installing that package here.*
 
 We then import data from [insert name of data source].  We print the data to allow us to verify what we've imported:
 ```
