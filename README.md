@@ -69,14 +69,32 @@ df.head()
 display(df)
 
 ```
-- *The above code is used for grabbing the data from the website directly.
-- *The most important thing to create when we consider grab a data from a live data set is API token. Each and every user has a separate API token and each and every data set in Socrata has separate identifier. Here "i4gi-tjb9" is identifier for the data set we are using and "CEjJtZpnruNltsucUPQkL4szd" is API token.
-- *Providing the username and password along with API token will allow access to many options.
-- *After grabbing the live data frame we can display it using `display(df)` command.
+- The above code is used for grabbing the data from the website directly.
+- The most important thing to create when we consider grab a data from a live data set is API token. Each and every user has a separate API token and each and every data set in Socrata has separate identifier. Here "i4gi-tjb9" is identifier for the data set we are using and "CEjJtZpnruNltsucUPQkL4szd" is API token.
+- Providing the username and password along with API token will allow access to many options.
+- After grabbing the live data frame we can display it using `display(df)` command.
 
 The data frame is dsiplayed below.
 
 ![Image of Plot](https://github.com/IE-555/api-vijay-ganesh-srinivasan-ramakrishna-polepeddi/blob/master/images/Capture_3.PNG)
+
+**Challenge faced when calculating the mean speed and mean time**
+
+The data captured from the mentioned site was in the `object` format which was found out to be `string`. To perform numerical operations the data has to be converted in to float. The command used `astype` to convert the datatype of existing data.
+
+```
+#Grouping of the data according to the borough and calculating the mean speed
+groupby_borough = df['travel_time'].groupby(df['borough'])
+groupby_borough
+df.travel_time = df.travel_time.astype(float)
+df['travel_time'].dtype
+list(df['travel_time'].groupby(df['borough']))
+#df.groupby('borough')['speed'].mean()
+average_travel_time=df.groupby('borough')['travel_time'].mean().values.tolist()
+
+```
+
+The above code explains the converstion of the data type and calculating mean speed and time.
 
 We then import data from [insert name of data source].  We print the data to allow us to verify what we've imported:
 ```
