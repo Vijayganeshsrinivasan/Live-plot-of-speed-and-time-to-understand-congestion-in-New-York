@@ -58,6 +58,24 @@ $ conda install folium
 ```
 Sodapy could be installed as `pip install sodapy`. For more details on Sodapy read the documentation mentioned in **Things to do before executing this program or learning this program**
 
+```
+
+#Accessing data from Socrata - Real time Traffic
+client = Socrata("data.cityofnewyork.us","CEjJtZpnruNltsucUPQkL4szd")
+results_list = client.get("i4gi-tjb9",select="travel_time,speed,borough,link_points")
+results_df = pd.DataFrame.from_records(results_list)
+df = pd.DataFrame.from_dict(results_df)
+df.head()
+display(df)
+
+```
+- *The above code is used for grabbing the data from the website directly.
+- *The most important thing to create when we consider grab a data from a live data set is API token. Each and every user has a separate API token and each and every data set in Socrata has separate identifier. Here "i4gi-tjb9" is identifier for the data set we are using and "CEjJtZpnruNltsucUPQkL4szd" is API token.
+- *Providing the username and password along with API token will allow access to many options.
+- *After grabbing the live data frame we can display it using `display(df)` command.
+
+The data frame is dsiplayed below.
+
 
 We then import data from [insert name of data source].  We print the data to allow us to verify what we've imported:
 ```
