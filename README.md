@@ -76,6 +76,7 @@ display(df)
 
 The data frame is dsiplayed below.
 
+![Image of Plot](https://github.com/IE-555/api-vijay-ganesh-srinivasan-ramakrishna-polepeddi/blob/master/images/Capture_3.PNG)
 
 We then import data from [insert name of data source].  We print the data to allow us to verify what we've imported:
 ```
