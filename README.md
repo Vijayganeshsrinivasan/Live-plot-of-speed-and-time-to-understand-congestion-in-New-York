@@ -17,9 +17,9 @@ Authors:  **Vijay Ganesh Srinivasan** and **Ramakrishna Polepeddi**
 ---
 
 ## Sources
-*In this section, provide links to your references.  For example:*
-- The source code came from [the magic source code farm](http://www.amagicalnonexistentplace.com)
-- The code retrieves data from [the organization for hosting cool data](http://www.anothermagicalnonexistentplace.com)
+- The source code came from [NYC OpenData](https://opendata.cityofnewyork.us/)
+- The code retrieves data from [Real-Time Traffic Speed Data](https://data.cityofnewyork.us/Transportation/Real-Time-Traffic-Speed-Data/qkm5-nuaq)
+- For link to json [click HERE](https://data.cityofnewyork.us/resource/i4gi-tjb9.json)
 
 ---
 
