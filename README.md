@@ -36,6 +36,8 @@ Authors:  **Vijay Ganesh Srinivasan** and **Ramakrishna Polepeddi**
 
 ## Explanation of the Code
 
+![Image of Plot](images/Capture_2.png)
+
 **The uploaded code is executed in the Jupyter environment. If you're trying to execute using Spyder, Windows Powershell or Apple command prompt the method may or may not vary**
 
 The uploaded code, `Live_Traffic_Data.py`, needs the following packages to be present. If not try installing it:
