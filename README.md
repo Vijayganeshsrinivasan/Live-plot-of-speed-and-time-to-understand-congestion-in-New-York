@@ -3,23 +3,28 @@
 Authors:  **Vijay Ganesh Srinivasan** and **Ramakrishna Polepeddi**
 
 ## Introduction
-- We are the Grad students from University at Buffalo, State University of New York written a program to capture live data and plot the speed and time to understand the congestion in the New York boroughs
-- The source of the data is from https://opendata.cityofnewyork.us/ . The site provides open source data, api and wrappers for the data what we want to analyze.
-- For this program we have taken the Real-Time Traffic Speed Data from the opendata.cityofnewyork website.
+- We are the Grad students from University at Buffalo, State University of New York written a program to capture live data and plot the speed and time to understand the congestion in the New York boroughs.
+- The basic understanding behind the bubble plot is when speed is more, time will be less and traffic will be less. When the speed is less, the time taken by the vehicle in the same road will be more and the congestion will be more.
+- More the traffic, bigger the bubble. The comparison is relative.
+- For this program we have taken the Real-Time Traffic Speed Data from the NYC OpenData.
 
 ## About the data
 - #### *The best part about the data is it will be frequently updated on hourly basis.*
 - This data feed contains 'real-time' traffic information from locations where Department Of Traffic picks up sensor feeds within the five boroughs, mostly on major arterials and highways. DOT uses this information for emergency response and management.
-- Visit https://data.cityofnewyork.us/Transportation/Real-Time-Traffic-Speed-Data/qkm5-nuaq for main page of the source of data.
-- Visit https://data.cityofnewyork.us/resource/i4gi-tjb9.json for data in json format.
-- The data will be available in .csv, .json and .geojson formats. The reason for using a .json type of data format over .csv is JSON is better at showing hierarchical / relational data, CSV will lose data, The standard CSV reader application is not good as it is compared with json and last but not least, JSON is easier to work with at scale. For more details on why json is better than csv visit - https://blog.datafiniti.co/4-reasons-you-should-use-json-instead-of-csv-2cac362f1943 .**For better picture even than the above explanation the data what we captured here, when we downloaded it as .csv, the size of the file was 3.9Gb.**
+- The data will be available in .csv, .json and .geojson formats. The reason for using a .json type of data format over .csv is JSON is better at showing hierarchical / relational data, CSV will lose data, The standard CSV reader application is not good as it is compared with json and last but not least, JSON is easier to work with at scale.**For better picture even than the above explanation the data what we captured here, when we downloaded it as .csv, the size of the file was 3.9Gb.**
 
 ---
 
 ## Sources
 - The source code came from [NYC OpenData](https://opendata.cityofnewyork.us/)
-- The code retrieves data from [Real-Time Traffic Speed Data](https://data.cityofnewyork.us/Transportation/Real-Time-Traffic-Speed-Data/qkm5-nuaq)
-- For link to json [click HERE](https://data.cityofnewyork.us/resource/i4gi-tjb9.json)
+- The code uses data from [Real-Time Traffic Speed Data](https://data.cityofnewyork.us/Transportation/Real-Time-Traffic-Speed-Data/qkm5-nuaq)
+- To know from where code retrieves the data from and link to json [click HERE](https://data.cityofnewyork.us/resource/i4gi-tjb9.json)
+- To understand why json is better than csv [click HERE](https://blog.datafiniti.co/4-reasons-you-should-use-json-instead-of-csv-2cac362f1943)
+
+## Things to do before executing this program or learning this program
+- The code uses the functions and modules of Socrata to perform the operations within the code. To learn about Real Time Traffic Speed Data from Socrata and its functions [click HERE](https://dev.socrata.com/foundry/data.cityofnewyork.us/i4gi-tjb9)
+- For general Socrata and module sodapy information [click HERE](https://dev.socrata.com/consumers/getting-started.html)
+- To know about types of python maps [click HERE](
 
 ---
 
