@@ -9,7 +9,9 @@ Authors:  **Vijay Ganesh Srinivasan** and **Ramakrishna Polepeddi**
 ---
 
 ## Introduction
-*We are the Grad students from University at Buffalo, State University of New York providing a live plot of speed and time to understand the congestion in the New York*
+*We are the Grad students from University at Buffalo, State University of New York written a program to capture live data and plot the speed and time to understand the congestion in the New York boroughs*
+- *The source of the data is from https://opendata.cityofnewyork.us/ . The site provides open source data, api and wrappers for the data what we want to analyze.
+- *For this program we have taken the Real-Time Traffic Speed Data from the opendata.cityofnewyork website. The best part about the data is it will be frequently updated on hourly basis. 
 - *Describe the type of data that you're importing.* 
 - *Describe the source of the data.  Include URLs.*  
 - *Explain how recent is this data?  How often is it updated?*
