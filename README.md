@@ -36,7 +36,7 @@ Authors:  **Vijay Ganesh Srinivasan** and **Ramakrishna Polepeddi**
 
 ## Explanation of the Code
 
-**What happens when the code runs**
+**Code summary**
 
 
 ![Image of Plot](https://github.com/IE-555/api-vijay-ganesh-srinivasan-ramakrishna-polepeddi/blob/master/images/Capture_2.PNG)
@@ -153,4 +153,9 @@ display(map)
 ---
 
 ## Suggestions
-*Finally, you should suggest any additional features that would be useful/interesting.  For example, what else could you do with these data?  How might you want to modify the plot to be more descriptive?  What summary statistics might you want to calculate with these data?*
+
+- We could make this data interact with the weather api which helps in giving the weather conditions and the traffic based on the weather. For example if it is a heavy snowy day then there could be a possibility of traffic in roads.
+
+- There are latitude and longitude data provided for the route taken by the vehicle. This information helps us to get a clear picture on a specific location of congestion.
+
+- For statistical analysis of the significant reason we could classify the reasons for traffic into bad weather, workzone, poor traffic timings, accidents and determine which is more responsible for traffic. A step ahead we could give a travel tip on which day to travel based on the traffic data we hold.
