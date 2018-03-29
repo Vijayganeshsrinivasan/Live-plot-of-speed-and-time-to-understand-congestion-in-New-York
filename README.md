@@ -128,15 +128,15 @@ display(map)
 
 ```
 
-**Output of Speed**
+**Output of Average Vehicle Speed**
 ![Image of Plot](https://github.com/IE-555/api-vijay-ganesh-srinivasan-ramakrishna-polepeddi/blob/master/images/Capture_5.PNG)
-**Output of Time**
+**Output of Average Travel Time**
 ![Image of Plot](https://github.com/IE-555/api-vijay-ganesh-srinivasan-ramakrishna-polepeddi/blob/master/images/Capture_6.PNG)
 ---
 
 ## How to Run the Code
-*Provide step-by-step instructions for running the code.  For example, I like to run code from the terminal:*
-1. Open a terminal window.
+
+1. Download the file and save it in the Jupyter working directory. 
 
 2. Change directories to where `needs_a_good_name.py` is saved.
 
