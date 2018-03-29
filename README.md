@@ -132,20 +132,23 @@ display(map)
 ![Image of Plot](https://github.com/IE-555/api-vijay-ganesh-srinivasan-ramakrishna-polepeddi/blob/master/images/Capture_5.PNG)
 **Output of Average Travel Time**
 ![Image of Plot](https://github.com/IE-555/api-vijay-ganesh-srinivasan-ramakrishna-polepeddi/blob/master/images/Capture_6.PNG)
+
 ---
 
 ## How to Run the Code
 
-1. Download the file and save it in the Jupyter working directory. 
+1. Download the file and **save it in the Jupyter working directory**.
 
-2. Change directories to where `needs_a_good_name.py` is saved.
+2. Open a new jupyter notebook file.
 
-3. Type the following command:
+3. Use `run` command to execute the python file in given the cell. 
+
+4. Type the following command:
 	```
-	python needs_a_good_name.py
+	run Live_Traffic_Data.py
 	```
 
-- *NOTE: You are welcome to provide instructions using Anaconda or IPython.*
+![Image of Plot](https://github.com/IE-555/api-vijay-ganesh-srinivasan-ramakrishna-polepeddi/blob/master/images/Capture_7.PNG)
 
 ---
 
