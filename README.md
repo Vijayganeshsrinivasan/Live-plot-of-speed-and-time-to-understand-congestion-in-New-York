@@ -58,6 +58,7 @@ $ conda install folium
 ```
 Sodapy could be installed as `pip install sodapy`. For more details on Sodapy read the documentation mentioned in **Things to do before executing this program or learning this program**
 
+
 ```
 
 #Accessing data from Socrata - Real time Traffic
@@ -74,7 +75,11 @@ display(df)
 - Providing the username and password along with API token will allow access to many options.
 - After grabbing the live data frame we can display it using `display(df)` command.
 
-The data frame is dsiplayed below.
+Raw Data from the website:
+
+![Image of Plot](https://github.com/IE-555/api-vijay-ganesh-srinivasan-ramakrishna-polepeddi/blob/master/images/Capture_4.PNG)
+
+Structured Data from the website:
 
 ![Image of Plot](https://github.com/IE-555/api-vijay-ganesh-srinivasan-ramakrishna-polepeddi/blob/master/images/Capture_3.PNG)
 
