@@ -3,7 +3,7 @@
 Authors:  **Vijay Ganesh Srinivasan** and **Ramakrishna Polepeddi**
 
 ## Introduction
-- We are the Grad students from University at Buffalo, State University of New York written a program to capture live data and plot the speed and time to understand the congestion in the New York boroughs.
+- The objective of the program is to capture live data and plot the speed and time to understand the congestion in the New York boroughs.
 - The basic understanding behind the bubble plot is when speed is more, time will be less and traffic will be less. When the speed is less, the time taken by the vehicle in the same road will be more and the congestion will be more.
 - More the traffic, bigger the bubble. The comparison is relative.
 - For this program we have taken the Real-Time Traffic Speed Data from the NYC OpenData.
