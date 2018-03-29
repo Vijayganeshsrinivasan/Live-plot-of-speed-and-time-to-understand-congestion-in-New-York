@@ -101,28 +101,37 @@ average_travel_time=df.groupby('borough')['travel_time'].mean().values.tolist()
 
 The above code explains the converstion of the data type and calculating mean speed and time.
 
-We then import data from [insert name of data source].  We print the data to allow us to verify what we've imported:
+**Folium code explanation:**
+
+- The type of map used here is openstreetmap from Folium. There are lot of maps. Based on the usage we could select which tile we need.
+- The first step is setting the home position for the map. Here it's NY. The co-ordinates of the NY is given.
+- The co-ordinates of the boroughs are added to the map one by one as markers
+- Finally the output for both speed and time is displayed.
+
 ```
-x = [1, 3, 4, 7]
-y = [2, 5, 1, 6]
+#Folium maps for the display of the final output
+map = folium.Map(location=[40.7128, -74.0060],tiles="openstreetmap",zoom_start=10)
+for i in range(0,len(data)):
+    folium.Marker([data.iloc[i]['lat'], data.iloc[i]['lon']], popup=data.iloc[i]['name']).add_to(map)
+# Adding marker one by one
+for i in range(0,len(data)):
+    folium.Circle(location=[data.iloc[i]['lat'], data.iloc[i]['lon']],popup=data.iloc[i]['name'],radius=data.iloc[i]['value_speed']*100,color='crimson',fill=True,fill_color='crimson' ).add_to(map)    
+display(map)
+#Folium maps for the display of the final output
+map = folium.Map(location=[40.7128, -74.0060],tiles="openstreetmap",zoom_start=10)
+for i in range(0,len(data)):
+    folium.Marker([data.iloc[i]['lat'], data.iloc[i]['lon']], popup=data.iloc[i]['name']).add_to(map)
+# Adding marker one by one
+for i in range(0,len(data)):
+    folium.Circle(location=[data.iloc[i]['lat'], data.iloc[i]['lon']],popup=data.iloc[i]['name'],radius=data.iloc[i]['value_time']*5,color='yellow',fill=True,fill_color='yellow' ).add_to(map)
+display(map)
 
-for i in range(0,len(x)):
-	print "x[%d] = %f" % (i, x[i])		
 ```
-- *NOTE 1:  This sample code doesn't actually import anything.  You'll need your code to grab live data from an online source.*  
-- *NOTE 2:  You will probably also need to clean/filter/re-structure the raw data.  Be sure to include that step.*
 
-Finally, we visualize the data.  We save our plot as a `.png` image:
-```
-plt.plot(x, y)
-plt.savefig('samplefigure.png')	
-plt.show()
-```
-
-The output from this code is shown below:
-
-![Image of Plot](images/samplefigure.png)
-
+**Output of Speed**
+![Image of Plot](https://github.com/IE-555/api-vijay-ganesh-srinivasan-ramakrishna-polepeddi/blob/master/images/Capture_5.PNG)
+**Output of Time**
+![Image of Plot](https://github.com/IE-555/api-vijay-ganesh-srinivasan-ramakrishna-polepeddi/blob/master/images/Capture_6.PNG)
 ---
 
 ## How to Run the Code
