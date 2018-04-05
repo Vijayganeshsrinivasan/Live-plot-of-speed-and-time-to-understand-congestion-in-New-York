@@ -123,7 +123,7 @@ for i in range(0,len(data)):
     folium.Marker([data.iloc[i]['lat'], data.iloc[i]['lon']], popup=data.iloc[i]['name']).add_to(map)
 # Adding marker one by one
 for i in range(0,len(data)):
-    folium.Circle(location=[data.iloc[i]['lat'], data.iloc[i]['lon']],popup=data.iloc[i]['name'],radius=data.iloc[i]['value_time']*5,color='yellow',fill=True,fill_color='yellow' ).add_to(map)
+    folium.Circle(location=[data.iloc[i]['lat'], data.iloc[i]['lon']],popup=data.iloc[i]['name'],radius=data.iloc[i]['value_time']*5,color='purple',fill=True,fill_color='purple' ).add_to(map)
 display(map)
 
 ```
