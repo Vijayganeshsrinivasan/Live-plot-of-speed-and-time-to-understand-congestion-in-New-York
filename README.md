@@ -8,6 +8,13 @@ Authors:  **Vijay Ganesh Srinivasan** and **Ramakrishna Polepeddi**
 - More the traffic, bigger the bubble. The comparison is relative.
 - For this program we have taken the Real-Time Traffic Speed Data from the NYC OpenData.
 
+**Output of Average Vehicle Speed**
+![Image of Plot](https://github.com/IE-555/api-vijay-ganesh-srinivasan-ramakrishna-polepeddi/blob/master/images/Capture_5.PNG)
+**Output of Average Travel Time**
+![Image of Plot](https://github.com/IE-555/api-vijay-ganesh-srinivasan-ramakrishna-polepeddi/blob/master/images/Capture_6.PNG)
+
+
+
 ## About the data
 - #### *The best part about the data is it will be frequently updated on hourly basis.*
 - This data feed contains 'real-time' traffic information from locations where Department Of Traffic picks up sensor feeds within the five boroughs, mostly on major arterials and highways. DOT uses this information for emergency response and management.
@@ -80,6 +87,8 @@ Raw Data from the website:
 ![Image of Plot](https://github.com/IE-555/api-vijay-ganesh-srinivasan-ramakrishna-polepeddi/blob/master/images/Capture_4.PNG)
 
 Structured Data from the website:
+
+The raw data is shown below as structured one by converting it into a dataframe using pandas.
 
 ![Image of Plot](https://github.com/IE-555/api-vijay-ganesh-srinivasan-ramakrishna-polepeddi/blob/master/images/Capture_3.PNG)
 
